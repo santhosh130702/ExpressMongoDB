@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(45deg, rgb(80, 160, 216), rgb(237, 123, 16));
+    font-family: "Sansita Swashed", cursive;
+  }
+
+  .center-container {
+      margin: 5%;
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center; /* Center-align the content inside .center */
+  }
+  .center-container  input {
+    width: 200px;
+    border: 2px solid #000;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    background: none;
+    font-size: 1.2em;
+    margin: 5px ; /* Add vertical margin between input fields */
+  } 
+  .center-container th{
+      width: 30%; 
+      font-weight: bold;
+      margin-right: 10px;     
+  }
+  
+    .center-container  input[type="submit"] {
+       
+      width: 110px;
+      background: dodgerblue;
+      color: #fff;
+      border: none;
+      margin: 50%; 
+    }
+
+    
+    .center-container  input:hover[type="submit"] {
+      background: linear-gradient(45deg, greenyellow, dodgerblue);
+    }

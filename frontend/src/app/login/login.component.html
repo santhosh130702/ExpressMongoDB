@@ -1,0 +1,18 @@
+<body>
+  
+  <div class="center-container">
+    
+        <h1>Login</h1>
+        <form name="LoginForm" #loginData="ngForm" (ngSubmit)='login(loginData)'>
+            <table>
+                <tr><th>UserName</th><td>
+                  <input type="text" name="UserName" placeholder="Enter Your UserName"  ngModel required max="30" min="5"/><br></td></tr>
+                <tr><th>Password</th>
+                  <td><input type="password" name="password"  ngModel required /><br></td></tr>
+                
+                <input type="submit" value="Login" [disabled]="!loginData.valid"/><br>
+            </table>
+        </form>
+   
+  </div>
+</body>

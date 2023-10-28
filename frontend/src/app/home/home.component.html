@@ -1,0 +1,36 @@
+
+<body>
+  <div class="homecontainer">
+<b>Enter users data</b> <br>
+<form #userData="ngForm" >
+  <table> <tr><th>UserID</th>
+<td><input type="text" name="id" ngModel/></td></tr>
+<tr><th>Password</th>  
+<td> <input type="text" name="pass" ngModel/> </td></tr>
+<tr> <th>EmailID</th>
+<td><input type="text" name="email" ngModel/> </td>
+ </tr>
+
+<input type="button" value="Add User" (click)="addUser(userData)" /> <br>
+<input type="button" value="Get user" (click)="getAllUsers()"/>
+</table>
+</form>
+<br><label>{{this.expresponse.substring(3,this.expresponse.length-4)}} </label> <br><br>
+<table style="  border: 2px; border-style: dashed; border-color: black;">
+  <tbody>
+    <tr>
+      <th>UserID</th>
+      <th>Password</th>
+      <th> EmailID</th>
+    </tr>
+    <tr *ngFor="let user of userList">
+      <!-- <input type="button" value="edit user" (click)="editUser(userData)"/> -->
+      <td>   {{user.UserID}}      </td>
+      <td>   {{user.Password}}  </td>
+      <td>   {{user.EmailID}}   </td>
+     
+    </tr>
+  </tbody>
+</table>
+</div>
+</body>

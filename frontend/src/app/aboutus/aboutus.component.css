@@ -1,0 +1,8 @@
+.aboutus {
+    justify-content: center;
+    
+    height: 900px;
+    width: 1200px;
+    background: linear-gradient(45deg, greenyellow, dodgerblue);
+    font-family: "Sansita Swashed", cursive;
+  }

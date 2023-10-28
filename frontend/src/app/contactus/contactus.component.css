@@ -1,0 +1,83 @@
+
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(45deg, greenyellow, dodgerblue);
+      font-family: "Sansita Swashed", cursive;
+    }
+
+    .center {
+        
+      /* background: #fff; */
+      border-radius: 10px;
+      padding: 30px;
+      text-align: center; /* Center-align the content inside .center */
+    }
+
+    .center h1 {
+      font-size: 24px;
+    }
+
+    .center h3 {
+      font-size: 18px;
+    }
+
+    /* .center  {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    } */
+
+    .center  input {
+      width: 50%;
+      border: 2px solid #000;
+      outline: none;
+      padding: 10px;
+      border-radius: 10px;
+      background: none;
+      font-size: 1.2em;
+      margin: 5px ; /* Add vertical margin between input fields */
+    } 
+    .center label{
+        
+        display: inline-block; /* Display label and input inline-block */
+        width: 30%; /* Adjust the width as needed */
+        font-weight: bold;
+        margin-right: 10px; /* Add right margin for spacing between label and input */
+          
+    }
+
+    .center form input[type="button"],
+    .center form input[type="submit"] {
+      width: 20%;
+      background: dodgerblue;
+      color: #fff;
+      border: none;
+      margin: 10px 0; /* Add vertical margin between buttons */
+    }
+
+    .center form input:hover[type="button"],
+    .center form input:hover[type="submit"] {
+      background: linear-gradient(45deg, greenyellow, dodgerblue);
+    }
+
+    table {
+      width: 100%; /* Make the table take the full width of its container */
+      border: 2px dashed black;
+      border-radius: 1px;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 2px solid black;
+      border-style: dashed;
+      border-radius: 1px;
+      padding: 10px;
+    }
+
